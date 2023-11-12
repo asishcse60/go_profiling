@@ -1,0 +1,12 @@
+go run .
+go tool pprof cpu.prof
+web
+hide=runtime
+top
+web
+focus=math
+top
+web
+For browser:(Should exit from pprof interactive mode)
+------------
+go tool pprof -http localhost:8888 cpu.prof
